@@ -85,11 +85,11 @@ var spawnFeedProcess = function( doc ) {
 }
 
 emitter.on('change', function (change) {
-  if (change.doc._id in children) {
+  if (change && change.doc && (change.doc._id in children)) {
     return;
   };
   var doc = change.doc;
-  if (doc.feed && doc.db) {
+  if (doc && (doc.feed && doc.db)) {
     doc.couch = couch.protocol + "//" + couch.host;
     queueFetch(doc);
   }

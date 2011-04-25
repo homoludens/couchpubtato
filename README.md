@@ -18,7 +18,7 @@ To try out:
     git submodule init
     git submodule update
     ruby create_test_data.rb http://admin:password@localhost:5894
-    node couchpubtato.js http://localhost:5984/feeds
+    node couchpubtato.js http://localhost:5984/nytimes
 
 Then look in the 'articles' database on Couch :)
 

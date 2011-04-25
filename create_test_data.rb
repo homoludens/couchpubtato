@@ -2,7 +2,8 @@
 
 # pass in your couch base url. admin username and password required if you're not in admin party
 # e.g. http://admin:password@localhost:5984
-YOURCOUCH = ARGV[0]
+#YOURCOUCH = ARGV[0]
+YOURCOUCH = 'http://127.0.0.1:5984'
 
 feeds = {}
 
